@@ -1,0 +1,27 @@
+h2 a {
+  color: red;
+}
+
+.foo.bar {
+  color: green;
+}
+
+/*
+<h2>
+  <a href="/bio.html">Jesse Farmer</a>
+</h2>
+
+<p class="foo bar">
+  This will not be green.
+</p>
+
+<section class="foo">
+  <h2>Hello, World</h2>
+  <p class="bar">
+    This will be green.
+  </p>
+</section>
+
+
+.map((i, el) => $(el).text().trim())
+*/
