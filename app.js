@@ -21,7 +21,6 @@ app.engine('hbs', handlebars({
   defaultLayout: 'layout'
 }));
 
-
 app.root = (...args) => path.join(__dirname, ...args);
 app.inProduction = () => app.get('env') === 'production';
 app.inDevelopment = () => app.get('env') === 'development';
