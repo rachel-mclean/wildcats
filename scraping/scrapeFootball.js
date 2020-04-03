@@ -43,18 +43,24 @@ async function main() {
   let playerData = Array.from($('.sidearm-roster-players .sidearm-roster-player').map((i, playerListItem) => {
     return {
       name: $(playerListItem).find('.sidearm-roster-player-name p a').text().trim(),
+      team: 'football',
       position: $(playerListItem).find('.sidearm-roster-player-position-long-short.hide-on-small-down').text().trim(),
       weight: Number($(playerListItem).find('.sidearm-roster-player-weight').text().trim().replace(' lbs', '')),
-      height: getHeightInInches($(playerListItem).find('.sidearm-roster-player-height').text().trim()),
+      height: $(playerListItem).find('.sidearm-roster-player-height').text().trim(),
+      jersey_number: Number($(playerListItem).find('.sidearm-roster-player-jersey-number').text().trim()),
+      academic_year: $(playerListItem).find('.hide-on-medium-down .sidearm-roster-player-academic-year').text().trim(),
+      hometown: $(playerListItem).find('.hide-on-medium-down .sidearm-roster-player-hometown').text().trim(),
+      highschool: $(playerListItem).find('.hide-on-medium-down .sidearm-roster-player-highschool').text().trim(),
+      image_url: 'https://davidsonwildcats.com/' + $(playerListItem).find('.lazyload').attr('data-src')
     };
   }));
 
   console.log(playerData);
   // for (let player of playerData) {
-  //   await knex('players').insert(player);
-  // }
+  //    await knex('football_players').insert(player);
+  //  }
 
-  // await knex.destroy();
+  //  await knex.destroy();
 }
 
 

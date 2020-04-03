@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CatSearch</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/search-bar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <!-- {{!-- Faster One font --}} -->
+      <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Teko:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 id="header-title" class="red-text text-darken-1"><em>CatSearch</em></h1>
+   </header>
+  <h2> Search bar test:</h2>
+  <form id="search" class="center" action="/search" method="GET">
+    <!-- {{!-- <span class="center"><img src="https://i.ibb.co/g7Y2xx8/logo.png" alt="logo"></span> --}} -->
+    <div class="search-bar center">
+      <input type="text" name="term"
+        value="{{searchTerm}}"
+        placeholder="Search for a Davidson wildcat"
+        id="term-input">
+      <button type="submit" class="waves-effect waves-light btn-small"><i class="material-icons large"><em>Go!</em>></i></button>
+    </div>
+  </form>
+  <h2>Profile card test:</h2>
+  <div class="wildcat-profile card z-depth-5">
+    <div class="wildcat-pic card-image valign-wrapper">
+      <img src="{{image_url}}" alt="athlete photo" class="responsive-img valign-wrapper">
+    </div>
+    <div class="wildcat-info">
+      <div class="wildcat-name"><h2>Name</h2></div>
+      <div class="jersey-number"><h2>Jersey Number</h2></div>
+      <div class="wildcat-position"><h2>Position</h2></div>
+      <div class="divider"></div>
+      <div class="wildcat-details">
+        <h4>Profile:</h4>
+        <ul>
+          <li><bold>Height:</bold></li>
+          <li><bold>Weight:</bold></li>
+          <li><bold>Academic Year:</bold></li>
+          <li><bold>Hometown</bold>:</li>
+          <li><bold>Highschool</bold>:</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

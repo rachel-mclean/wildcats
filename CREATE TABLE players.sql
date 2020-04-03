@@ -1,0 +1,11 @@
+-- CREATE TABLE players (
+--   id SERIAL PRIMARY KEY,
+--   name TEXT NOT NULL
+-- );
+
+-- INSERT INTO players (name, position) VALUES ('Tony Collins', 'Linebacker');
+-- for (let row of playerData) {
+--   await pg.query('INSERT INTO players (name, position) VALUES (?, ?)', [row.name, row.position]);
+--   await knex('players').insert(row);
+-- }
+-- await knex('players').batchInsert(playerData);
