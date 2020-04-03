@@ -4,11 +4,7 @@ let router = new Router();
 let Player = require('./models/Player');
 
 router.get('/', async(request, response) => {
-  let players = await Player.query()
-    .select('*')
-    .orderBy('name');
-
-  response.render('main', {players});
+  response.render('main', { players: [] });
 });
 
 router.get('/search', async(request, response) => {
