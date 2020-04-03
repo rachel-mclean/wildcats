@@ -1,12 +1,18 @@
 body {
   font-family: 'Faster One', cursive;
-  background-image: url('https://cdn.discordapp.com/attachments/694578697411494029/695416278969745528/unknown.png')
+  background-image: url('https://cdn.discordapp.com/attachments/694578697411494029/695493816848744528/football_23-06-56-605.png');
+  /* background-image: linear-gradient(red, black, red); */
 }
+
+/* .background-image {
+  background-image: url('https://cdn.discordapp.com/attachments/694578697411494029/695416278969745528/unknown.png');
+} */
 
 #header-title {
   font-size: 10rem;
   width: fit-content;
   margin: 2% auto;
+  color: white;
 }
 
 .wildcat-container {
@@ -26,6 +32,8 @@ body {
   align-content: space-between;
   padding: 2%;
   border: 2px solid black;
+  background-image: linear-gradient(rgb(221, 11, 11), rgb(136, 6, 6), darkred);
+  color: white;
   border-radius: 2rem;
   margin: 2% auto;
   width: 100%;
@@ -49,11 +57,11 @@ body {
   font-size: 2rem;
 }
 
-.hero-pic img {
+.wildcat-pic img {
   width: 100%;
 }
 
-.hero-info {
+.wildcat-info {
   width: 45%;
 }
 
@@ -74,6 +82,26 @@ body {
 
 .search-bar {
   width: 30%;
+}
+
+input[type=text] {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-style: italic;
+}
+
+.column {
+  flex: 33.3%;
+  padding: 5px;
+}
+
+.column img{
+  margin-top: 35px;
+  filter: grayscale(100%);
+}
+
+.row {
+  display: flex;
 }
 
 input {

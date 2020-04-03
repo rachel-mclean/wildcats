@@ -199,9 +199,10 @@ CREATE TABLE wrestling_players (
   team TEXT NOT NULL
 );
 
-CREATE TABLE all_players (
+CREATE TABLE players (
   id SERIAL PRIMARY KEY,
   name TEXT NOT NULL,
+  sport TEXT NOT NULL,
   position TEXT,
   bat_and_throw_hand TEXT,
   height TEXT,
